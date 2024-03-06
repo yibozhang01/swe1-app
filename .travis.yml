@@ -1,12 +1,10 @@
 language: python
-before_install:
-  - pyenv install 3.11
-  - pyenv global 3.11
+
   
 deploy:
   provider: elasticbeanstalk
-  access_key_id: AKIA5FTZEXVM6RBBE7MK
-  secret_access_key: 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
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: us-west-2
   app: django-tutorial
   env: django-env
