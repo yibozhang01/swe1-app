@@ -5,6 +5,7 @@ python:
 
 install:
   - pip install -r requirements.txt
+  - pip install --upgrade requests urllib3
   - pip install black flake8 coverage coveralls
 
 before_script:
